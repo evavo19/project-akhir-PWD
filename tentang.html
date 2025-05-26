@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #004aad;
+            text-decoration: none;
+        }
+
+        .login .button {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: none;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .login .button a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .login .button:hover {
+            background-color: #a0bcf2;
+        }
+
+        .login .button:hover a {
+            color: black;
+        }
+
+        /* tentang */
+        .tentang {
+            text-align: center;
+            margin: 0 auto;
+            padding: 100px 60px 20px;
+            color: #1a1a1a;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #F7FBFC, #D6E6F2, #B9D7EA, #769FCD, #578FCA);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .tentang h2 {
+            font-size: 2.5rem;
+            color: #004aad;
+        }
+
+        .tentang h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #012e6d;
+            margin-top: 10px;
+        }
+
+        .visi-misi {
+            color: #e63946;
+            font-size: 2rem;
+            margin-top: 50px;
+            font-weight: 700;
+        }
+
+        .tentang p {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>INI HALAMAN TENTANG</h1>
+
+    <nav>
+        <div class="logo">
+            <a href="../les_sd/index.html">
+                <img src="assets/logo project.jpg" alt="Logo THYNK BIMBEL" />
+            </a>
+        </div>
+
+        <div class="navbar">
+            <a href="../les_sd/index.html">BERANDA</a>
+            <a href="../les_sd/tentang.html">TENTANG</a>
+            <a href="../les_sd/program.html">PROGRAM</a>
+        </div>
+
+        <div class="login">
+            <button class="button"><a href="../les_sd/login.php">Login</a></button>
+        </div>
+    </nav>
+
+
+    <section class="tentang">
+        <h2>Tentang</h2>
+        <h1>THYNK BIMBEL</h1>
+
+        <h3 class="visi-misi">VISI</h3>
+        <p>THYNK Bimbel adalah tempat belajar tambahan yang menyenangkan untuk anak-anak Sekolah Dasar. Kami memberikan
+            bimbingan belajar, les privat, dan bantuan belajar lainnya dengan biaya terjangkau. Didampingi oleh
+            guru-guru yang sabar dan berpengalaman, kami ingin membantu semua anak belajar dengan nyaman dan senang,
+            agar mereka bisa lebih percaya diri dan berprestasi di sekolah.
+        </p>
+
+        <h3 class="visi-misi">MISI</h3>
+        <p>
+            Kami ingin setiap anak yang belajar di THYNK Bimbel menjadi lebih pintar, lebih semangat belajar, dan
+            punya nilai yang lebih baik dari sebelumnya. Kami juga ingin membantu anak-anak mencapai cita-cita mereka,
+            seperti masuk ke sekolah lanjutan yang diimpikan. Dengan belajar bersama kami, anak-anak akan dibimbing
+            untuk menjadi versi terbaik dari diri mereka.
+        </p>
+    </section>
+</body>
+
+</html>

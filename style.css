@@ -1,0 +1,237 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-color: white;
+  width: 350px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[name="username"], input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"], button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.error {
+  color: red;
+  background-color: #ffe6e6;
+  padding: 10px;
+  border-left: 5px solid red;
+  margin-bottom: 15px;
+}
+
+.rules {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px dashed #bbb;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.rules ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.rules li {
+  margin-bottom: 5px;
+}
+.rules strong {
+  color: #333;
+}
+.rules a {
+  color: #3498db;
+  text-decoration: none;
+}
+.rules a:hover {
+  text-decoration: underline;
+}
+.rules a:visited {
+  color: #2980b9;
+}
+.rules a:active {
+  color: #1abc9c;
+}
+.rules a:focus {
+  outline: none;
+  box-shadow: 0 0 5px #3498db;
+}
+.rules a:focus-visible {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+.rules a:focus:not(:focus-visible) {
+  outline: none;
+}
+.rules a:focus-visible:hover {
+  text-decoration: underline;
+}
+
+/* Index */
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  flex: 1;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.logout {
+  background-color: #e74c3c;
+}
+
+.logout:hover {
+  background-color: #c0392b;
+}
+
+/* Materi */
+body.body-materi {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0 20px;
+  color: #333;
+}
+
+/* Judul halaman */
+h1.judul-halaman {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Judul subbagian (kelas, mapel, materi) */
+h2.judul-subbagian {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Menu kelas dan mapel (flexbox) */
+.menu-kelas, .menu-mapel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Tombol kelas dan mapel */
+.btn-kelas, .btn-mapel {
+  padding: 10px 16px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #bdc3c7;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-kelas:hover, .btn-mapel:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Tombol aktif */
+.aktif {
+  background-color: #2980b9;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Daftar materi */
+.daftar-materi {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Item materi */
+.item-materi {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Judul dan konten materi */
+.judul-materi {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.konten-materi {
+  margin-top: 5px;
+  white-space: pre-wrap;
+}
+
+/* Pesan jika tidak ada materi */
+.pesan-tidak-ada {
+  font-style: italic;
+  color: #888;
+}
+.back {
+  text-decoration: none;
+  background-color: transparent;
+  color: #2980b9;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+.back:hover {
+  background-color: #2980b9;
+  color: white;
+}

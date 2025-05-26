@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 80px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #004aad;
+            text-decoration: none;
+        }
+
+        .login .button {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: none;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .login .button a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .login .button:hover {
+            background-color: #a0bcf2;
+        }
+
+        .login .button:hover a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>INI HALAMAN PROGRAM</h1>
+
+    <nav>
+        <div class="logo">
+            <a href="../les_sd/assets/logo project.jpg">
+                <img src="../les_sd/assets/logo project.jpg" alt="Logo THYNK BIMBEL" />
+            </a>
+        </div>
+
+        <div class="navbar">
+            <a href="../les_sd/index.html">BERANDA</a>
+            <a href="../les_sd/tentang.html">TENTANG</a>
+            <a href="../les_sd/program.html">PROGRAM</a>
+        </div>
+
+        <div class="login">
+            <button class="button"><a href="../les_sd/login.php">Login</a></button>
+        </div>
+    </nav>
+</body>
+</html>
