@@ -13,16 +13,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $cek = mysqli_query($conn, "SELECT * FROM users WHERE username='$username'");
   if (mysqli_num_rows($cek) > 0) {
     $pesan = "Username sudah digunakan. Silakan pilih yang lain.";
-  }
-  elseif (
+  } elseif (
     strlen($password) < 8 ||
     !preg_match('/[a-z]/', $password) ||
     !preg_match('/[A-Z]/', $password) ||
     !preg_match('/[\W]/', $password)
   ) {
     $pesan = "Password tidak valid.";
-  }
-  else {
+  } else {
     mysqli_query($conn, "INSERT INTO users(username, password) VALUES('$username','$password')");
     echo "<p>✅ Registrasi berhasil. <a href='login.php'>Login sekarang</a></p>";
     exit;
@@ -32,11 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <title>Registrasi</title>
   <link rel="stylesheet" href="../Web-Dev/style.css">
+
 </head>
+
 <body>
   <div class="card">
     <h2>Registrasi Siswa</h2>
@@ -64,8 +65,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       <input type="submit" value="Daftar">
     </form>
+
     <p>Sudah punya akun? <a href="login.php">Login Sekarang</a></p>
     <p><a href="index.html">Kembali ke Beranda</a></p>
+    
   </div>
 </body>
+
 </html>

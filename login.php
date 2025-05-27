@@ -30,7 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="../Web-Dev/style.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -47,8 +48,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <input type="password" name="password" placeholder="Masukkan Username" required>
       <input type="submit" value="Login">
     </form>
+
     <p>Jika belum punya akun <a href="register.php">Daftar</a> </p>
     <p><a href="../Web-Dev/index.html">Kembali ke Beranda</a></p>
+
   </div>
 </body>
 

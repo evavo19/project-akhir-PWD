@@ -16,8 +16,9 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #fff;
+            background: linear-gradient(to bottom, #FFFFFF, #DDF2FD, #9BBEC8, #427D9D, #164863);
             padding-top: 100px;
+            padding-bottom: 80px;
         }
 
         nav {
@@ -94,7 +95,7 @@
             margin: auto;
             background: #d4eaff;
             border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px black;
             padding: 40px;
         }
 
@@ -120,6 +121,12 @@
             height: 360px;
             border-radius: 50%;
             object-fit: cover;
+        }
+
+        .image-circle img:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .content {
@@ -245,44 +252,41 @@
 
             <div class="right">
                 <div class="fasilitas-box">
-                    <div>
-                        <h4>SISTEM & FASILITAS BIMBINGAN</h4>
-                        <ul>
-                            <li>2 kali pertemuan online setiap minggu (durasi 60 menit/pertemuan)</li>
-                            <li>Fokus pada penguatan literasi & numerasi dasar</li>
-                            <li>Pemahaman konsep belajar yang menyenangkan melalui pendekatan tematik</li>
-                            <li>Latihan soal adaptif berbasis permainan edukatif</li>
-                            <li>Interaksi langsung bersama tutor melalui Zoom/Google Meet</li>
-                            <li>Materi disesuaikan dengan kurikulum terbaru & kebutuhan tiap siswa</li>
-                            <li>Diberikan akses ke modul digital interaktif & video pembelajaran</li>
-                            <li>Dukungan konsultasi dan komunikasi orang tua via WhatsApp/Telegram</li>
-                            <li>Mini Try Out Online per semester sebagai evaluasi capaian belajar</li>
-                        </ul>
-                    </div>
+                    <h4>SISTEM & FASILITAS BIMBINGAN</h4>
+                    <ul>
+                        <li>2 kali pertemuan online setiap minggu (durasi 60 menit/pertemuan)</li>
+                        <li>Fokus pada penguatan literasi & numerasi dasar</li>
+                        <li>Pemahaman konsep belajar yang menyenangkan melalui pendekatan tematik</li>
+                        <li>Latihan soal adaptif berbasis permainan edukatif</li>
+                        <li>Interaksi langsung bersama tutor melalui Zoom/Google Meet</li>
+                        <li>Materi disesuaikan dengan kurikulum terbaru & kebutuhan tiap siswa</li>
+                        <li>Diberikan akses ke modul digital interaktif & video pembelajaran</li>
+                        <li>Dukungan konsultasi dan komunikasi orang tua via WhatsApp/Telegram</li>
+                        <li>Mini Try Out Online per semester sebagai evaluasi capaian belajar</li>
+                    </ul>
+                </div>
 
-
-                    <div class="biaya-box">
-                        <h4>BIAYA BIMBINGAN 2 SEMESTER (1 TAHUN AJARAN)</h4>
-                        <p>Biaya Pendaftaran : Rp 250.000,00</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>KELAS</th>
-                                    <th>BIAYA NORMAL</th>
-                                    <th>BIAYA ANGSUR (diskon 20%)</th>
-                                    <th>BIAYA LUNAS (diskon 30%)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1–3 SD	</td>
-                                    <td>Rp 5.995.000</td>
-                                    <td>Rp 4.795.000</td>
-                                    <td>Rp 4.195.000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="biaya-box">
+                    <h4>BIAYA BIMBINGAN 2 SEMESTER (1 TAHUN AJARAN)</h4>
+                    <p>Biaya Pendaftaran : Rp 250.000,00</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>KELAS</th>
+                                <th>BIAYA NORMAL</th>
+                                <th>BIAYA ANGSUR (diskon 20%)</th>
+                                <th>BIAYA LUNAS (diskon 30%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1–3 SD </td>
+                                <td>Rp 5.995.000</td>
+                                <td>Rp 4.795.000</td>
+                                <td>Rp 4.195.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
     </section>
@@ -351,5 +355,4 @@
         </div>
     </section>
 </body>
-
 </html>
