@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
   <meta charset="UTF-8">
   <title>Registrasi</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../Web-Dev/style.css">
 </head>
 <body>
   <div class="card">
@@ -46,26 +46,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php endif; ?>
 
     <form method="post">
-      <label>Username:</label>
-      <input name="username" value="<?= htmlspecialchars($username) ?>" required>
+      <label>Username</label>
+      <input name="username" placeholder="Masukkan Username" value="<?= htmlspecialchars($username) ?>" required>
 
-      <label>Password:</label>
-      <input type="password" name="password" required>
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Masukkan Password" required>
 
       <div class="rules">
-        <p><strong>Password harus:</strong></p>
+        <p><strong>Password harus :</strong></p>
         <ul>
-          <li>1. Minimal 8 karakter</li>
-          <li>2. Ada huruf kecil (a–z)</li>
-          <li>3. Ada huruf besar (A–Z)</li>
-          <li>4. Ada simbol (! @ # $ % dll)</li>
+          <li>Minimal 8 karakter</li>
+          <li>Ada huruf kecil (a – z)</li>
+          <li>Ada huruf besar (A – Z)</li>
+          <li>Ada simbol (! @ # $ % dll)</li>
         </ul>
       </div>
 
       <input type="submit" value="Daftar">
     </form>
     <p>Sudah punya akun? <a href="login.php">Login Sekarang</a></p>
-    <p><a href="index.php">Kembali ke Beranda</a></p>
+    <p><a href="index.html">Kembali ke Beranda</a></p>
   </div>
 </body>
 </html>

@@ -1,17 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
   background-color: #f0f8ff;
   margin: 0;
   padding: 0;
 }
 
 .card {
-  background-color: white;
+  background-color: #89A8B2;
   width: 350px;
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.50);
 }
 
 h2 {
@@ -32,11 +32,13 @@ input[name="username"], input[type="password"] {
   margin: 6px 0 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 input[type="submit"], button {
-  background-color: #3498db;
-  color: white;
+  background-color: #E5E1DA;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
   padding: 10px;
   width: 100%;
   border: none;
@@ -46,7 +48,7 @@ input[type="submit"], button {
 }
 
 input[type="submit"]:hover {
-  background-color: #2980b9;
+  background-color: #F1E7E7;
 }
 
 .error {

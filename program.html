@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program</title>
+<html lang="id">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Reguler</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -16,6 +16,8 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
+            background-color: #fff;
+            padding-top: 100px;
         }
 
         nav {
@@ -50,7 +52,6 @@
 
         .navbar a:hover {
             color: #004aad;
-            text-decoration: none;
         }
 
         .login .button {
@@ -60,14 +61,11 @@
             border-radius: 30px;
             border: none;
             font-weight: bold;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
         }
 
         .login .button a {
             color: white;
             text-decoration: none;
-            display: inline-block;
         }
 
         .login .button:hover {
@@ -77,28 +75,281 @@
         .login .button:hover a {
             color: black;
         }
+
+        .judul-besar {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #004aad;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .judul-besar span {
+            color: black;
+        }
+
+        .program {
+            max-width: 1100px;
+            margin: auto;
+            background: #d4eaff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .subjudul {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            background-color: #004aad;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .image-circle {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .image-circle img {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            /* diperbesar agar sejajar dengan garis merah */
+        }
+
+        .left {
+            flex: 0 0 35%;
+        }
+
+        .right {
+            flex: 0 0 60%;
+        }
+
+
+        .materi-box,
+        .fasilitas-box,
+        .biaya-box {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .materi-box h4,
+        .fasilitas-box h4,
+        .biaya-box h4 {
+            color: #004aad;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .materi-box p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .fasilitas-box ul {
+            padding-left: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .biaya-box table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .biaya-box th {
+            background-color: #1d74d6;
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .biaya-box td {
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .biaya-box tbody tr:nth-child(1) td {
+            background-color: #1a1a1a;
+            color: white;
+            font-weight: bold;
+        }
+
+        .biaya-box tbody tr:nth-child(2) td {
+            background-color: #444;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <h1>INI HALAMAN PROGRAM</h1>
-
     <nav>
         <div class="logo">
-            <a href="../les_sd/assets/logo project.jpg">
-                <img src="../les_sd/assets/logo project.jpg" alt="Logo THYNK BIMBEL" />
+            <a href="index.html">
+                <img src="assets/logo project.jpg" alt="Logo THYNK BIMBEL" />
             </a>
         </div>
-
         <div class="navbar">
-            <a href="../les_sd/index.html">BERANDA</a>
-            <a href="../les_sd/tentang.html">TENTANG</a>
-            <a href="../les_sd/program.html">PROGRAM</a>
+            <a href="index.html">BERANDA</a>
+            <a href="tentang.html">TENTANG</a>
+            <a href="program.html">PROGRAM</a>
         </div>
-
         <div class="login">
-            <button class="button"><a href="../les_sd/login.php">Login</a></button>
+            <button class="button"><a href="login.php">Login</a></button>
         </div>
     </nav>
+
+    <div class="judul-besar">KELAS <span>1, 2 ,3</span> SD</div>
+
+    <section class="program">
+        <div class="subjudul">THYNK PROGRAM CERDAS CILIK</div>
+
+        <div class="content">
+            <div class="left">
+                <div class="materi-box">
+                    <h4>MATERI BIMBINGAN</h4>
+                    <p><strong>KELAS :</strong> 1, 2, 3 SD</p>
+                    <p><strong>MATERI :</strong> MAT - IPA - BHS. INDONESIA</p>
+                </div>
+
+                <div class="image-circle">
+                    <img src="assets/program1.png" alt="Ilustrasi program reguler">
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="fasilitas-box">
+                    <div>
+                        <h4>SISTEM & FASILITAS BIMBINGAN</h4>
+                        <ul>
+                            <li>2 kali pertemuan online setiap minggu (durasi 60 menit/pertemuan)</li>
+                            <li>Fokus pada penguatan literasi & numerasi dasar</li>
+                            <li>Pemahaman konsep belajar yang menyenangkan melalui pendekatan tematik</li>
+                            <li>Latihan soal adaptif berbasis permainan edukatif</li>
+                            <li>Interaksi langsung bersama tutor melalui Zoom/Google Meet</li>
+                            <li>Materi disesuaikan dengan kurikulum terbaru & kebutuhan tiap siswa</li>
+                            <li>Diberikan akses ke modul digital interaktif & video pembelajaran</li>
+                            <li>Dukungan konsultasi dan komunikasi orang tua via WhatsApp/Telegram</li>
+                            <li>Mini Try Out Online per semester sebagai evaluasi capaian belajar</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="biaya-box">
+                        <h4>BIAYA BIMBINGAN 2 SEMESTER (1 TAHUN AJARAN)</h4>
+                        <p>Biaya Pendaftaran : Rp 250.000,00</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>KELAS</th>
+                                    <th>BIAYA NORMAL</th>
+                                    <th>BIAYA ANGSUR (diskon 20%)</th>
+                                    <th>BIAYA LUNAS (diskon 30%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1–3 SD	</td>
+                                    <td>Rp 5.995.000</td>
+                                    <td>Rp 4.795.000</td>
+                                    <td>Rp 4.195.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="judul-besar">KELAS <span>4, 5, 6</span> SD</div>
+
+    <section class="program">
+        <div class="subjudul">THYNK PROGRAM REGULER PRESTASI</div>
+
+        <div class="content">
+            <div class="left">
+                <div class="materi-box">
+                    <h4>MATERI BIMBINGAN</h4>
+                    <p><strong>KELAS:</strong> 4, 5, 6 SD</p>
+                    <p><strong>MATERI:</strong> MAT - IPA - BHS. INDONESIA</p>
+                </div>
+
+                <div class="image-circle">
+                    <img src="assets/program.png" alt="Ilustrasi program reguler">
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="fasilitas-box">
+                    <h4>SISTEM & FASILITAS BIMBINGAN</h4>
+                    <ul>
+                        <li>Kelas 6 SD: 3 kali pertemuan online setiap minggu (durasi 90 menit/pertemuan)</li>
+                        <li>Kelas 4 & 5 SD: 2 kali pertemuan online setiap minggu (durasi 90 menit/pertemuan)</li>
+                        <li>Pendampingan Sumatif Akhir Tahun 2026 (untuk kelas 4 & 5 SD)</li>
+                        <li>Pendampingan Ujian Akhir Sekolah (UASDA/ASPD) (untuk kelas 6 SD)</li>
+                        <li>Materi disampaikan secara interaktif via Zoom/Google Meet</li>
+                        <li>Simulasi UASDA/ASPD online melalui CBT (Computer Based Test) platform internal</li>
+                        <li>Rekaman kelas tersedia untuk diakses kembali kapan saja</li>
+                    </ul>
+                </div>
+
+                <div class="biaya-box">
+                    <h4>BIAYA BIMBINGAN 2 SEMESTER (1 TAHUN AJARAN)</h4>
+                    <p>Biaya Pendaftaran: Rp 250.000,00</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>KELAS</th>
+                                <th>BIAYA NORMAL</th>
+                                <th>BIAYA ANGSUR (diskon 20%)</th>
+                                <th>BIAYA LUNAS (diskon 30%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6 SD</td>
+                                <td>Rp 7.495.000</td>
+                                <td>Rp 5.995.000</td>
+                                <td>Rp 5.245.000</td>
+                            </tr>
+                            <tr>
+                                <td>4, 5 SD</td>
+                                <td>Rp 6.495.000</td>
+                                <td>Rp 5.195.000</td>
+                                <td>Rp 4.545.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
